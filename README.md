@@ -6,14 +6,9 @@ This is the version 2 of a small game project I wrote a long time ago for my TI-
 Building the game
 -----------------
 
-You first need to download [TIGCC](http://tigcc.ticalc.org/linux/index.html) tarballs:
-* http://www.ticalc.org/pub/unix/tigcc_bin_install.tar.bz2
-* http://www.ticalc.org/pub/unix/tigcc_bin.tar.bz2
+You first need to build a Docker image containing [TIGCC](http://tigcc.ticalc.org/linux/index.html):
 
-Then, you can install it:
-
-    tar xjf tigcc_bin_install.tar.bz2
-    sh Install.sh
+    make docker-image
 
 After that, you can compile the `carremag.89z` binary file:
 
